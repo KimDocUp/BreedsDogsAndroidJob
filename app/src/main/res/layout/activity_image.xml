@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ImageActivity">
+
+    <FrameLayout
+        android:id="@+id/frameHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEE"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/amarante"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Breeds"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_action_share" />
+
+        <LinearLayout
+            android:id="@+id/lBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_chevron_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text="@string/header_back"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/imgLike"
+        android:layout_below="@id/frameHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imgLike"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ic_action_heart"
+        app:tint="@android:color/darker_gray"
+        app:tintMode="multiply" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Breeds\nDogs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header_back">Back</string>
+    <string name="menu_list">List</string>
+    <string name="menu_favourites">Favourites</string>
+    <string name="txt_ok">OK</string>
+    <string name="some_server_error">Some server error</string>
+    <string name="try_connect_later">Try connect later</string>
+    <string name="header_breeds">Breeds</string>
+    <string name="loading">Loading...</string>
+</resources>
